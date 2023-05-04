@@ -1,0 +1,420 @@
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+  <link href="./page/Blog/trangchu.css" rel="stylesheet" />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Source+Code+Pro&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+  <title> LEVANVIET </title>
+  <style>
+/* Blog Item left */
+.blogCourseContainer{
+    padding: 50px;
+}
+.blogCourseContainer{
+    padding: 20px 50px;
+}
+
+.blogCourseContainer > h6{
+    padding: 20px 0;
+}
+
+.blogCourseContainer h6 i{
+    color: var(--colorTPrimary);
+    padding-right: 10px;
+    font-size: 20px;
+}
+/* Card Blog */
+.cardBlog{   
+    /* padding: 0 50px; */
+}
+.blogItemLeft{
+    padding: 0 30px 0 0;
+}
+.cardBlogContent{
+    display: flex;
+    flex-direction: column;
+    /* min-width: 335px; */
+    /* min-height: 516px; */
+    /* height: 516px; */
+    margin-bottom: 20px;
+    overflow: hidden;
+    transition: all 1s;
+}
+
+.imgCardBlog{
+    overflow: hidden;
+}
+/* handle hover card */
+.cardBlogContent:hover img{
+    animation: zoomImgBlog 1s forwards;
+}
+
+.cardBlogContent img{
+    object-fit: cover;
+    width: 100%;
+    height: 302px;
+    min-height: 302px;
+}
+
+.cardBlogContent h6{
+    font-size: 20px;
+    padding: 10px 0;
+}
+
+.timeBlogCourse{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cardBlogContent p {
+    padding: 10px 0;
+}
+
+.btnCardBlog{
+    width: 100px;
+}
+.timeBlogCourse span i {
+    color: var(--colorGlobal);
+}
+
+.timeBlogCourse .reviewBlog span{
+    padding-right: 10px;
+}
+
+.timeBlogCourse p span{
+    color: var(--colorTPrimary);
+}
+
+/* Blog Item Right */
+.blogItemRight{
+
+}
+
+.blogRightBox{
+    border: 1px solid #d0d0d0;
+    margin-bottom: 30px;
+    border-top: 3px solid var(--colorGlobal);
+}
+
+.blogRightBox > h6{
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #d0d0d0;
+}
+
+.blogRightBox ul li {
+    padding: 10px 20px;
+    list-style: none;
+}
+
+.blogRightBox ul li a {
+    color: var(--colorTextCard); 
+    transition: all 0.5s;   
+}
+
+.blogRightBox ul li:hover a {
+    display: inline-block;
+    transform: translateY(-2px);
+    color: var(--colorGlobal);
+    cursor: default; 
+}
+
+/* Post Blog */
+.postBlog{
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.postBlog img{
+    width: 100%;
+}
+.postBlog .imgPost img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.postBlog > img,
+.postBlog h6,
+.postBlog p {
+    padding-bottom: 10px;
+}
+
+/* Mobie */
+@media screen and (max-width: 46.1875em) {
+    .blogItemLeft {
+        padding: 0;
+    }
+    .cardBlogContent img {     
+        object-fit: fill;
+    }
+    .timeBlogCourse {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+    
+}
+/* Animation card hover img */
+@keyframes zoomImgBlog {
+    0%{
+        transform: scale(1);
+        filter: brightness(1);
+    }
+    100%{
+        transform: scale(1.05);
+        filter: brightness(0.7);
+
+    }
+}
+
+
+  </style>
+</head>
+
+<body>
+  <section class='blogCourse'>
+                <div class='titleCourse'>
+                    <h3>Blog</h3>
+                    <p>Thông tin công nghệ số!!!</p>
+                </div>
+                <div class='blogCourseContainer'>
+                    <h6><a href=""><i class="fas fa-bullhorn"></i>PHÙ HỢP VỚI BẠN</a></h6>
+                    <div class='row'>
+                        <div class='col-md-8'>
+                            <div class='blogItemLeft'>
+                                <div class='row'>
+                                    <div class="col-xl-6 mb-4">
+                                        <div class='cardBlog'>
+                                            <div class='cardBlogContent'>
+                                                <div class='imgCardBlog'>
+                                                    <img src="https://cdn.fullstack.edu.vn/f8-learning/blog_posts/1671/61b6368a3a089.jpg" onError={(e) => { e.target.onerror = null; e.target.src = "https://cdn.fullstack.edu.vn/f8-learning/blog_posts/1671/61b6368a3a089.jpg" }} alt="" />
+                                                </div>
+                                                <h6>Thời gian và động lực</h6>
+                                                <div class='timeBlogCourse'>
+                                                    <div class='reviewBlog'>
+                                                        <span><i class="far fa-thumbs-up"></i> 300</span>
+                                                        <span><i class="far fa-comment"></i> 500</span>
+                                                        <span><i class="fas fa-eye"></i> 200</span>
+                                                    </div>
+                                                    <p>Đăng bởi<span> Jhony Đặng</span></p>
+                                                </div>
+                                                <p class='colorCardTitle'>Có lẽ cũng rất lâu rồi mà tôi chưa đụng đến thứ được gọi là "timetable". Hay dân dã hơn thì người ta hay gọi là "Lịch thường nhật",...</p>
+                                                <button class='btnGlobal btnCardBlog'><a href="">Xem thêm</a></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 mb-4">
+                                        <div class='cardBlog'>
+                                            <div class='cardBlogContent'>
+                                                <div class='imgCardBlog'>
+                                                    <img src="https://cdn.fullstack.edu.vn/f8-learning/blog_posts/1653/61b46a3d757cc.png" onError={(e) => { e.target.onerror = null; e.target.src = "https://cdn.fullstack.edu.vn/f8-learning/blog_posts/1653/61b46a3d757cc.png" }} alt="" />
+                                                </div>
+                                                <h6>Tailwind css và cách cài đặt cơ bản </h6>
+                                                <div class='timeBlogCourse'>
+                                                    <div class='reviewBlog'>
+                                                        <span><i class="far fa-thumbs-up"></i> 300</span>
+                                                        <span><i class="far fa-comment"></i> 500</span>
+                                                        <span><i class="fas fa-eye"></i> 200</span>
+                                                    </div>
+                                                    <p>Đăng bởi<span> Jhony Đặng</span></p>
+                                                </div>
+                                                <p class='colorCardTitle'>Có lẽ cũng rất lâu rồi mà tôi chưa đụng đến thứ được gọi là "timetable". Hay dân dã hơn thì người ta hay gọi là "Lịch thường nhật",...</p>
+                                                <button class='btnGlobal btnCardBlog'><a href="">Xem thêm</a></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 mb-4">
+                                        <div class='cardBlog'>
+                                            <div class='cardBlogContent'>
+                                                <div class='imgCardBlog'>
+                                                    <img src="https://cdn.fullstack.edu.vn/f8-learning/blog_posts/1637/61b175b3debf2.jpg" onError={(e) => { e.target.onerror = null; e.target.src = "https://cdn.fullstack.edu.vn/f8-learning/blog_posts/1653/61b46a3d757cc.png" }} alt="" />
+
+                                                </div>
+                                                <h6>Cấu trúc cơ bản trong HTML</h6>
+                                                <div class='timeBlogCourse'>
+                                                    <div class='reviewBlog'>
+                                                        <span><i class="far fa-thumbs-up"></i> 300</span>
+                                                        <span><i class="far fa-comment"></i> 500</span>
+                                                        <span><i class="fas fa-eye"></i> 200</span>
+                                                    </div>
+                                                    <p>Đăng bởi<span> Jhony Đặng</span></p>
+                                                </div>
+                                                <p class='colorCardTitle'>Custom theme Material UI với TypeScript đơn giản, hiệu quả...</p>
+                                                <button class='btnGlobal btnCardBlog'><a href="">Xem thêm</a></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 mb-4">
+                                        <div class='cardBlog'>
+                                            <div class='cardBlogContent'>
+                                                <div class='imgCardBlog'>
+
+                                                    <img src="https://cdn.fullstack.edu.vn/f8-learning/blog_posts/1463/61a1bbd28851c.jpg" onError={(e) => { e.target.onerror = null; e.target.src = "https://cdn.fullstack.edu.vn/f8-learning/blog_posts/1463/61a1bbd28851c.jpgog_posts/1653/61b46a3d757cc.png" }} alt="" />
+                                                </div>
+                                                <h6>Material UI custom theme với TypeScript</h6>
+                                                <div class='timeBlogCourse'>
+                                                    <div class='reviewBlog'>
+                                                        <span><i class="far fa-thumbs-up"></i> 300</span>
+                                                        <span><i class="far fa-comment"></i> 500</span>
+                                                        <span><i class="fas fa-eye"></i> 200</span>
+                                                    </div>
+                                                    <p>Đăng bởi<span> Jhony Đặng</span></p>
+                                                </div>
+                                                <p class='colorCardTitle'>Trắc hẳn ai cũng biết một trang web thì không thể nào thiếu đi HTML và HTML làm nên cấu trúc của một trang web...</p>
+                                                <button class='btnGlobal btnCardBlog'><a href="">Xem thêm</a></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 mb-4">
+                                        <div class='cardBlog'>
+                                            <div class='cardBlogContent'>
+                                                <div class='imgCardBlog'>
+
+                                                    <img src="https://cdn.fullstack.edu.vn/f8-learning/blog_posts/1385/6197a09e60b56.png" onError={(e) => { e.target.onerror = null; e.target.src = "https://cdn.fullstack.edu.vn/f8-learning/blog_posts/1385/6197a09e60b56.png" }} alt="" />
+                                                </div>
+                                                <h6>Cách tạo một component nhanh chóng chỉ bằng 3 ký tự</h6>
+                                                <div class='timeBlogCourse'>
+                                                    <div class='reviewBlog'>
+                                                        <span><i class="far fa-thumbs-up"></i> 300</span>
+                                                        <span><i class="far fa-comment"></i> 500</span>
+                                                        <span><i class="fas fa-eye"></i> 200</span>
+                                                    </div>
+                                                    <p>Đăng bởi<span> Jhony Đặng</span></p>
+                                                </div>
+                                                <p class='colorCardTitle'>Tạo một component nhiều lúc cũng khá mất nhiều thời gian nên mình xin giới thiệu extention này cho mọi người nhé...</p>
+                                                <button class='btnGlobal btnCardBlog'><a href="">Xem thêm</a></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 mb-4">
+                                        <div class='cardBlog'>
+                                            <div class='cardBlogContent'>
+                                                <div class='imgCardBlog'>
+
+                                                    <img src="https://cdn.fullstack.edu.vn/f8-learning/blog_posts/1355/619482df77279.jpg" onError={(e) => { e.target.onerror = null; e.target.src = "https://cdn.fullstack.edu.vn/f8-learning/blog_posts/1355/619482df77279.jpg" }} alt="" />
+                                                </div>
+                                                <h6>Material UI custom theme với TypeScript</h6>
+                                                <div class='timeBlogCourse'>
+                                                    <div class='reviewBlog'>
+                                                        <span><i class="far fa-thumbs-up"></i> 300</span>
+                                                        <span><i class="far fa-comment"></i> 500</span>
+                                                        <span><i class="fas fa-eye"></i> 200</span>
+                                                    </div>
+                                                    <p>Đăng bởi<span> Jhony Đặng</span></p>
+                                                </div>
+                                                <p class='colorCardTitle'>Như các bạn đã biết chúng ta sẽ sử dụng target="_blank" cho thẻ a để khi người dùng click vô sẽ mở liên kết trên một tab mới...</p>
+                                                <button class='btnGlobal btnCardBlog'><a href="">Xem thêm</a></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 mb-4">
+                                        <div class='cardBlog'>
+                                            <div class='cardBlogContent'>
+                                                <div class='imgCardBlog'>
+
+                                                    <img src="https://cdn.fullstack.edu.vn/f8-learning/blog_posts/1069/617946ecf0f63.jpg" onError={(e) => { e.target.onerror = null; e.target.src = "https://cdn.fullstack.edu.vn/f8-learning/blog_posts/1069/617946ecf0f63.jpg" }} alt="" />
+                                                </div>
+                                                <h6>Xử lý bất đồng bộ trong Javascript (phần 2)</h6>
+                                                <div class='timeBlogCourse'>
+                                                    <div class='reviewBlog'>
+                                                        <span><i class="far fa-thumbs-up"></i> 300</span>
+                                                        <span><i class="far fa-comment"></i> 500</span>
+                                                        <span><i class="fas fa-eye"></i> 200</span>
+                                                    </div>
+                                                    <p>Đăng bởi<span> Jhony Đặng</span></p>
+                                                </div>
+                                                <p class='colorCardTitle'>Async/await là cơ chế giúp bạn thực thi các thao tác bất đồng bộ một cách tuần tự hơn , giúp đoạn code nhìn qua tưởng như đồng...</p>
+                                                <button class='btnGlobal btnCardBlog'><a href="">Xem thêm</a></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 mb-4">
+                                        <div class='cardBlog'>
+                                            <div class='cardBlogContent'>
+                                                <img src="https://cdn.fullstack.edu.vn/f8-learning/blog_posts/1073/6179eca8efb18.jpg" onError={(e) => { e.target.onerror = null; e.target.src = "https://cdn.fullstack.edu.vn/f8-learning/blog_posts/1073/6179eca8efb18.jpg" }} alt="" />
+                                                <h6>TyperScrip là gì, Vì sao nên dùng TyperScript</h6>
+                                                <div class='timeBlogCourse'>
+                                                    <div class='reviewBlog'>
+                                                        <span><i class="far fa-thumbs-up"></i> 300</span>
+                                                        <span><i class="far fa-comment"></i> 500</span>
+                                                        <span><i class="fas fa-eye"></i> 200</span>
+                                                    </div>
+                                                    <p>Đăng bởi<span> Jhony Đặng</span></p>
+                                                </div>
+                                                <p class='colorCardTitle'>Link khóa học cho anh em nào tò mò ( Đừng lo vì tất cả đều miễn......</p>
+                                                <button class='btnGlobal btnCardBlog'><a href="">Xem thêm</a></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='col-md-4'>
+                            <div class='blogItemRight'>
+                                <div class='blogRightBox'>
+                                    <h6>Các chủ đề được đề xuất</h6>
+                                    <ul>
+                                        <li><a href="">Front-end / Mobile apps</a></li>
+                                        <li><a href="">UI / UX / Design</a></li>
+                                        <li><a href="">BACK-END</a></li>
+                                        <li><a href="">Thư viện</a></li>
+                                        <li><a href="">Chia sẻ người trong nghề</a></li>
+                                        <li><a href="">Châm ngôn IT</a></li>
+                                        <li><a href="">Chủ đề khác</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class='blogRightBox'>
+                                    <h6>Bài đăng được đề xuất</h6>
+                                    <div class='postBlog'>
+                                        <img src="https://cdn.fullstack.edu.vn/f8-learning/blog_posts/1027/6174b331c4b4f.png" alt="" />
+                                        <h6>Routing trong reactjs</h6>
+                                        <p class='colorCardTitle'>Chúng ta sẽ cùng nhau tìm hiểu cách routing trong reactjs...</p>
+                                        <div class='imgPost'>
+                                            <img src={require('../../Assets/Img/imgInstrutors/instrutor13.jpg').default} alt="" />
+                                            <span class='colorCardTitle'> Nguyên Văn</span>
+                                        </div>
+                                    </div>
+                                    <div class='postBlog'>
+                                        <img src="https://cdn.fullstack.edu.vn/f8-learning/blog_posts/1021/6173be68944ad.jpg" alt="" />
+                                        <h6>Lập trình hướng đối tượng oop</h6>
+                                        <p class='colorCardTitle'>Chúng ta sẽ cùng nhau tìm hiểu cách oop trong reactjs...</p>
+                                        <div class='imgPost'>
+                                            <img src={require('../../Assets/Img/imgInstrutors/instrutor12.jpg').default} alt="" />
+                                            <span class='colorCardTitle'> Nguyên Văn Vũ</span>
+                                        </div>
+                                    </div>
+                                    <div class='postBlog'>
+                                        <img src="https://cdn.fullstack.edu.vn/f8-learning/blog_posts/1017/6172259ab8b80.png" alt="" />
+                                        <h6>Xử Lý Bất Đồng Bộ Trong Javascript</h6>
+                                        <p class='colorCardTitle'>Chắc chắn khi lập trình, bạn sẽ có các công việc cần thời gian delay (gọi API, lấy dữ liệu từ Database, đọc/ghi file,...). Và đây...</p>
+                                        <div class='imgPost'>
+                                            <img src={require('../../Assets/Img/imgInstrutors/instrutor11.jpg').default} alt="" />
+                                            <span class='colorCardTitle'> Nguyên Minh</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+</body>
+
+</html>
